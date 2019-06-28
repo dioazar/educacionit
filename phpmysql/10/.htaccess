@@ -1,0 +1,17 @@
+# Activar RewriteEngine
+RewriteEngine on
+
+# Reescribir la URL solicitada por el usuario
+#   Entrada:  clientes/NOMBRE/
+#   Salida: clientes.php?id=NOMBRE
+
+RewriteCond %{HTTP_HOST}   !^www_mysite_com [NC]
+RewriteCond %{HTTP_HOST}   !^$
+RewriteCond %{SERVER_PORT} !^80$
+RewriteRule ^/(.*)         http://www_mysite_com:%{SERVER_PORT}/$1 [L,R]
+
+###############################################################################################################
+RewriteRule ^error/?$ views/error.php
+
+RewriteRule ^contacto/?$ contacto.php
+RewriteRule ^contacto-(\w+)-(\w+)/?$ contacto.php?id_contacto=$1&misValores=$2

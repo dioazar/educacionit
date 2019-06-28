@@ -1,0 +1,20 @@
+CREATE PROCEDURE sp_ins_producto
+(
+	 @nombre VARCHAR(200)
+    ,@precio FLOAT
+    ,@marca INT
+    ,@categoria INT
+)
+AS BEGIN
+	DECLARE @id_producto INT
+    
+    IF @precio < 20 BEGIN
+		SELECT 'aca me estas queriendo hackear' 'mensaje'
+    END ELSE BEGIN
+		SET @id_producto = (SELECT MAX(idProducto) + 1 FROM productos)
+        INSERT INTO productos VALUES(@id_producto, @nombre, @....)
+        
+        SELECT @id_producto
+    END
+    INSERT INTO
+END

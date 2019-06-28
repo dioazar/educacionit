@@ -1,0 +1,282 @@
+body{
+    margin:0;
+    padding:0;    
+}
+
+input{
+
+    border:1px solid #ccc;
+    border-radius:3px;
+    padding:0.5em;
+    width:100%;
+    margin-top:0.8em;
+
+}
+
+input[type="submit"]{
+
+    background-color:cornsilk;
+    cursor:pointer;
+    font-size:18px;
+
+}
+
+input[type="submit"]:hover{
+
+    background-color:bisque;
+
+}
+
+table{
+    text-align:left;
+}
+
+input.generar{
+    background-color:crimson;
+    color:white;
+}
+
+input.generar:hover{
+    background-color:red;
+    color:white;
+}
+
+#basket{
+    border:1px solid #ccc;
+    border-radius:3px;
+    padding:1em;
+    margin:0 auto;
+    position:fixed;
+    left:1%;
+    height:80%;
+    width:20%;
+    background-color:firebrick;
+    color:#fff;
+}
+
+#basket .elements{
+    border:2px dashed #ccc;
+    padding:0.5em;
+    clear:both;
+    overflow:auto;
+    height:35%;
+}
+
+#basket .total{
+    margin-top:1em;
+    font-size:2em;
+    float:left;
+}
+
+#basket .total >.text{
+    float:left;
+
+}
+
+#basket .total .num{
+    float:left;
+}
+
+#basket .elements .legend{
+    text-align:center;
+    color:#777;
+    font-size:16px;
+    font-weight:bold;
+}
+
+#basket .elements .product{
+
+    min-width:6em;
+    padding:0.5em;
+    margin-bottom:5px;
+    float:left;
+    border:1px solid #222;
+    background-color:dodgerblue;
+    color:#fcfcfc;
+    width:95%;
+    border-radius:5px;
+    font-size:12px;
+    font-weight:bold;
+    margin-left:5px;
+
+}
+
+#basket .elements .product .name{
+    float:left;
+    padding-right:1em;
+    text-overflow:ellipsis;
+    width:70%;
+}
+
+#basket .elements .product .amount{
+    float:left;
+    width:1em;
+    border-radius:3px;
+    background-color:darkgreen;
+    text-align:center;
+    margin-right:0.5em;
+    padding:3px;
+    margin-top:-3px;
+}
+
+#basket .elements .product .remove{
+    float:left;
+    width:1em;
+    border-radius:3px;
+    background-color:crimson;
+    text-align:center;
+    margin-right:0.5em;
+    padding:3px;
+    margin-top:-3px;
+    cursor:pointer;
+}
+
+.draggable{
+    position:relative;
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.draggable div{
+    float:left;
+    min-width:1em;
+}
+
+
+#products{
+    border:1px solid #333;
+    margin-left:25%;
+    width:76%;
+    float:right;
+    padding-bottom:10px;
+    
+}
+
+#products .product{
+    width:98%;
+    margin:0 auto;
+    height:1em;
+    height:5%;
+    padding-top:1em;
+    border-bottom:1px solid #888;
+}
+
+#products .product div{
+    float:left;
+    text-align:center;
+}
+
+#products .product.header{
+    padding:0;
+    background-color:#33ccff;
+    padding-top:1em;
+    border:0px;
+    font-weight:bold;
+    float:left;
+    width:100%;
+    border-bottom:1px solid #555;
+}
+
+#products .product.header .name{
+    width:60%;
+    text-align:left;
+}
+
+#products .product.header .brand,
+#products .product.header .price,
+#products .product.header .stock{
+    width:9.3%;
+    text-align:center;
+}
+
+#products .product .name{
+    width:60%;
+    text-align:left;
+    padding-left:0.5em;
+}
+
+#products .product .brand,
+#products .product .price,
+#products .product .stock{
+    width:10%;
+    text-align:center;
+}
+
+#products .product .icon > a{
+    color:#555 !important;
+    display:block;
+    font-size:18px;
+    padding-bottom:0.5em;
+}
+
+.container{
+
+}
+
+.container > .body{
+    padding:5px;
+    width:95%;
+    margin:0 auto;
+    margin-top:1em;
+    clear:both;
+}
+
+.container > .header{
+    background-color:crimson;
+    color:#fff;
+    padding:1em;
+}
+
+#cliente{
+    float:left;
+    border:1px solid #333;
+    width:20%;
+    padding:1em;
+    padding-top:0em;
+    border-radius:5px;
+    background-color:lightgoldenrodyellow;
+}
+
+#productos{
+    float:right;
+    width:70%;
+    border:1px solid #333;
+}
+
+.container .footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:10%;
+    padding-top:0.5em;
+    background-color:#777;
+    border:1px solid #ccc;
+}
+
+.container .body #products{
+    width:60%;
+    margin-left:0 !important;
+}
+
+.container .footer button{
+    background-color:khaki;
+    border:1px solid white;
+    font-size:18px;
+    border-radius:5px;
+    padding:1em;
+    margin:0 auto;
+    display:block;
+    width:40%;
+    cursor:pointer;
+}
+
+.container .footer button:hover{
+    background-color:gold;
+}
+
+#products .list{
+    height:50%;
+    overflow:auto;
+}
